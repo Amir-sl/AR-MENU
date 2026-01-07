@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="sidebar">
+            <h1 class="title">RED RIVER</h1>
+            <nav>
+                <button class="nav-btn" id="default-tab" onclick="fetchPlayerList(event)">
+                    <i class="fa-solid fa-users"></i> PLAYERS LIST
+                </button>
+                <button class="nav-btn" onclick="openTab(event, 'status')">
+                    <i class="fa-solid fa-address-card"></i> JOURNAL
+                </button>
+            </nav>
+            <button id="close-btn">EXIT DASHBOARD</button>
+        </div>
+        <div class="main-content">
+            <div id="player-list-tab" class="tab-content">
+                <h2 class="section-title">Active Citizens</h2>
+                <div class="player-list-header"><span>NAME</span><span>JOB</span><span>PING</span></div>
+                <div class="guide-scroll" id="player-list-container"></div>
+            </div>
+            
+            <div id="status" class="tab-content" style="display:none;">
+                <h2 class="section-title">Personal Records</h2>
+                <div class="stat-card">
+                    <div class="info-item"><i class="fa-solid fa-sun"></i> TIME: <span id="time">00:00</span></div>
+                    <div class="info-item"><i class="fa-solid fa-user-tie"></i> NAME: <span id="player-name">...</span></div>
+                    <div class="info-item"><i class="fa-solid fa-fingerprint"></i> ID: <span id="player-id">0</span></div>
+                </div>
+                
+                <div class="stat-grid" style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div class="stat-item">
+                        <span><i class="fa-solid fa-star" style="color:#ffcc00; margin-right: 8px;"></i> Lawmen:</span>
+                        <span id="sheriffs">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span><i class="fa-solid fa-staff-snake" style="color:#2ecc71; margin-right: 8px;"></i> Doctors:</span>
+                        <span id="medics">1</span>
+                    </div>
+                    <div class="stat-item">
+                        <span><i class="fa-solid fa-gavel" style="color:#3498db; margin-right: 8px;"></i> Judges:</span>
+                        <span id="justice">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span><i class="fa-solid fa-user-ninja" style="color:#e67e22; margin-right: 8px;"></i> Agents:</span>
+                        <span id="pinkerton">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
