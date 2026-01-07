@@ -19,15 +19,14 @@ Automated ID Management: No manual configuration needed. The script generates an
 Startup Resilience: Features "Smart Wait" logic to ensure the server networking and VORP Core are fully stable before syncing.
 
 🚀 Usage & Controls
-⌨️ In-Game Hotkey: Press F6 to open/close the Journal menu.
 
-💬 Chat Command: Type /journal in the chat to toggle the menu.
+💬 Chat Command: Type /ARMENU in the chat to toggle the menu.
 
 📢 Discord Status: Once the server starts, the script will automatically create and maintain a live status embed in your designated channel.
 
 🛠️ Configuration & Installation
 1. Initial Setup
-Place the ARMENU folder into your server's resources directory.
+Place the AR-MENU folder into your server's resources directory.
 
 Ensure an empty log_id.txt file exists in the resource folder.
 
