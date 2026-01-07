@@ -28,8 +28,6 @@ Startup Resilience: Features "Smart Wait" logic to ensure the server networking 
 1. Initial Setup
 Place the AR-MENU folder into your server's resources directory.
 
-Ensure an empty log_id.txt file exists in the resource folder.
-
 Add ensure AR-MENU to your server.cfg.
 
 2. Discord Integration
